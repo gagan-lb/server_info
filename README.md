@@ -1,4 +1,4 @@
-# System Information Script
+# Server Information Script
 
 A simple Python script that displays comprehensive system information including OS details, CPU usage, memory utilization, disk space, and system uptime.
 
