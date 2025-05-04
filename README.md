@@ -25,3 +25,35 @@ pip install psutil
 ####Usage####
 Simply run the script:
 python system_info.py
+
+###Sample Output###
+# ./server_info.py 
+==================================================
+SYSTEM INFORMATION REPORT
+==================================================
+OS: Linux 5.14.0-362.8.1.el9_3.x86_64
+Hostname: target2
+Version: #1 SMP PREEMPT_DYNAMIC Wed Nov 8 17:36:32 UTC 2023
+Machine Architecture: x86_64
+Processor: x86_64
+CPU Cores: 64
+CPU Usage: 85.7%
+Memory: 172.6GB / 251.0GB (69.4%)
+Disk: 9.0GB / 69.9GB (12.9%)
+Uptime: 33 days, 2:37:57.823125
+
+Network Information:
+IP Address: 192.168.40.49
+Bytes Sent: 1993808.96 MB
+Bytes Received: 2402063.17 MB
+
+Running Processes:
+1 - systemd
+2 - kthreadd
+3 - rcu_gp
+4 - rcu_par_gp
+5 - slub_flushwq
+
+Hardware Model:
+System: x86_64
+
