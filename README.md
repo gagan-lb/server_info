@@ -1,33 +1,27 @@
-Server Info
-A simple Python script to display and log system information.
-Description
-Server Info is a lightweight Python utility that provides essential information about your system, including:
+########System Information Script##########3
+A simple Python script that displays comprehensive system information including OS details, CPU usage, memory utilization, disk space, and system uptime.
+####Features####
 
-OS details and version
-CPU usage and core count
-Memory and disk usage
-System uptime
-Network information
-Running processes
-Hardware model information
+Shows operating system details (name, version, architecture)
+Displays CPU information (cores and current usage)
+Shows memory usage (used/total and percentage)
+Shows disk usage (used/total and percentage)
+Displays system uptime since last boot
 
-The script logs this information to a file for record-keeping and system monitoring purposes.
-Requirements
+####Requirements####
+This script requires the following Python libraries:
 
-Python 3.6+
-psutil library
+platform (standard library)
+psutil (needs to be installed)
+datetime (standard library)
 
-Installation
+####Installation####
 
-Clone this repository:
-git clone https://github.com/gagan-lb/server_info.git
-cd server_info
+Make sure you have Python 3 installed on your system
+Install the required psutil library:
 
-Install the required dependencies:
 pip install psutil
 
-
-Usage
-Run the script with Python:
-python server_info.py
-The script will display system information in the console and save it to a log file named server_info.log in the same directory.
+####Usage####
+Simply run the script:
+python system_info.py
