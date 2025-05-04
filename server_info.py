@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+k#!/usr/bin/env python3
 """
 System Information Script
 A simple script to display system information like OS, CPU, memory, and disk usage.
@@ -42,7 +42,7 @@ def get_system_info():
     uptime = datetime.datetime.now() - boot_time
     print(f"Uptime: {uptime}")
     
-    # Add network information
+    # Check network information
     print("\nNetwork Information:")
     hostname = socket.gethostname()
     ip_address = socket.gethostbyname(hostname)
