@@ -27,7 +27,6 @@ Simply run the script:
 python system_info.py
 
 ###Sample Output###
-# ./server_info.py 
 ==================================================
 SYSTEM INFORMATION REPORT
 ==================================================
