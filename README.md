@@ -31,6 +31,6 @@ pip install psutil
 Simply run the script:
 
 ```
-python system_info.py
+python server_info.py
 ```
 
