@@ -1,52 +1,36 @@
-# Server Info Script
+# System Information Script
 
-This Python script is designed to gather basic system information on a Linux server. It provides useful details about the system such as:
-
-- Hostname
-- IP address
-- Operating System and Kernel
-- CPU information
-- Memory
-- Network Interface Cards (NICs) and their MAC addresses
-- System uptime, disk usage, load average, and running processes
+A simple Python script that displays comprehensive system information including OS details, CPU usage, memory utilization, disk space, and system uptime.
 
 ## Features
-- Displays hostname and IP address
-- Shows system OS, kernel version, and CPU details
-- Prints memory information and system hardware model
-- Lists all NICs along with their MAC addresses
-- Provides system uptime, disk usage, load average, and process count
+
+- Shows operating system details (name, version, architecture)
+- Displays CPU information (cores and current usage)
+- Shows memory usage (used/total and percentage)
+- Shows disk usage (used/total and percentage)
+- Displays system uptime since last boot
 
 ## Requirements
-- Python 3.x
-- Basic Linux commands (e.g., `ls`, `cat`, `df`, `uptime`)
+
+This script requires the following Python libraries:
+- `platform` (standard library)
+- `psutil` (needs to be installed)
+- `datetime` (standard library)
+
+## Installation
+
+1. Make sure you have Python 3 installed on your system
+2. Install the required `psutil` library:
+
+```
+pip install psutil
+```
 
 ## Usage
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/gagan-lb/server_info.git
-    ```
+Simply run the script:
 
-2. Change to the script directory:
-    ```bash
-    cd server_info
-    ```
-
-3. Make the script executable:
-    ```bash
-    chmod +x serverspecs.py
-    ```
-
-4. Run the script:
-    ```bash
-    ./serverspecs.py
-    ```
-
-   Or run it using Python:
-    ```bash
-    python3 serverspecs.py
-    ```
-
-
+```
+python system_info.py
+```
 
