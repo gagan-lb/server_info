@@ -1,56 +1,52 @@
-# Server Information Script
+# Server Info Script
 
-A simple Python script that displays comprehensive system information including OS details, CPU usage, memory utilization, disk space, and system uptime.
+This Python script is designed to gather basic system information on a Linux server. It provides useful details about the system such as:
+
+- Hostname
+- IP address
+- Operating System and Kernel
+- CPU information
+- Memory
+- Network Interface Cards (NICs) and their MAC addresses
+- System uptime, disk usage, load average, and running processes
 
 ## Features
-
-- Shows operating system details (name, version, architecture)
-- Displays CPU information (cores and current usage)
-- Shows memory usage (used/total and percentage)
-- Shows disk usage (used/total and percentage)
-- Displays system uptime since last boot
+- Displays hostname and IP address
+- Shows system OS, kernel version, and CPU details
+- Prints memory information and system hardware model
+- Lists all NICs along with their MAC addresses
+- Provides system uptime, disk usage, load average, and process count
 
 ## Requirements
-
-This script requires the following Python libraries:
-
-- platform (standard library)
-- psutil (needs to be installed)
-- datetime (standard library)
-
-## Installation
-
-Make sure you have Python 3 installed on your system. Install the required psutil library:
-
-```bash
-pip install psutil
-```
+- Python 3.x
+- Basic Linux commands (e.g., `ls`, `cat`, `df`, `uptime`)
 
 ## Usage
 
-Simply run the script:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/gagan-lb/server_info.git
+    ```
 
-```bash
-python system_info.py
-```
+2. Change to the script directory:
+    ```bash
+    cd server_info
+    ```
 
-## Sample Output
+3. Make the script executable:
+    ```bash
+    chmod +x serverspecs.py
+    ```
 
-```
-SYSTEM INFORMATION REPORT
-=========================
+4. Run the script:
+    ```bash
+    ./serverspecs.py
+    ```
 
-OS: Linux 5.14.0-362.8.1.el9_3.x86_64 Hostname: target2 Version: #1 SMP PREEMPT_DYNAMIC Wed Nov 8 17:36:32 UTC 2023
-Machine Architecture: x86_64 Processor: x86_64
-CPU Cores: 64 CPU Usage: 85.7%
-Memory: 172.66GB / 251.0GB (69.4%)
-Disk: 9.0GB / 69.9GB (12.9%)
-Uptime: 33 days, 2:37:57.823125
+   Or run it using Python:
+    ```bash
+    python3 serverspecs.py
+    ```
 
-Network Information: IP Address: 192.168.40.49
-Bytes Sent: 1993808.96 MB
-Bytes Received: 2402063.17 MB
 
-Running Processes: 1 - systemd 2 - kthreadd 3 - rcu_gp 4 - rcu_par_gp 5 - slub_flushwq
 
-Hardware Model: System: x86_64
